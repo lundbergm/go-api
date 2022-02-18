@@ -1,0 +1,11 @@
+"Player"
+type Player {
+  id: ID!
+  name: String!
+  points: Int!
+}
+
+type Query {
+  "Get all players for a Liga"
+  players(liga: ID!): [Player!]!
+}
